@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Happy New Year 2022</title>
+  <style type="text/css">
+    body{
+      background: #000;
+      font-family: Sans-Serif;
+      margin: 0;
+    }
+    video{
+      position: fixed;
+      width: 100%;
+      height: 100%;
+    }
+    .container{
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+    .gradient{
+      color: #fff;
+      font-size: 100px;
+      background: linear-gradient(to right, #d00,#009,#909,#dd0,#090);
+      -webkit-text-fill-color:transparent;
+      -webkit-background-clip:text;
+      background-size: 200% auto;
+      animation: shine 3s infinite;
+    }
+    keyframez shine{
+      0%{
+        background-position: 200% center;
+        transform: scale(1);
+      }
+      50%{
+        background-position: 100% center;
+        transform: scale(1.5);
+      }
+      100%{
+        background-position: 200% center;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <video autoplay loop>
+    <source src="animasi.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <h1 class="gradient">Happy New Years 2022</h1>
+  </div>
+</body>
+</html>
